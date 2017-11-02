@@ -14,9 +14,10 @@ def SalvarDados():
     print ("Dados armazenados com sucesso !!")
 
 #Definindo botoes e titulo da tela de Cadastro
-def tela_add_contatos():
-    
-root = Tk()
+class Cadastro:
+    def __init__(self):
+        self.Label()
+
 
 janela = Tk()
 
