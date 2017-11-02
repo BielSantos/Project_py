@@ -3,10 +3,23 @@
                      #Agenda eletronica em python    #
                      # Autor: Gabriel Santos         #
                      #                               #
-import tkinter
-from tkinter import * #biblioteca gui
+
+from tkinter import *  #biblioteca gui
+
+#Definindo a funçãos que salva os dados em um aquivo
+def SalvarDados():
+    arq = open("Notas.txt","w")
+    arq.write("Nome: %s \n"%(nome.get()))
+    arq.write("Numero: %s \n"%(numero.get()))
+    print ("Dados armazenados com sucesso !!")
+
+#Definindo botoes e titulo da tela de Cadastro
+def tela_add_contatos():
+    
+root = Tk()
 
 janela = Tk()
+
 
 bt_add = Button(janela,width=20,text="Inserir contato")
 bt_exibir = Button(janela,width=20,text="Mostrar Agenda")
